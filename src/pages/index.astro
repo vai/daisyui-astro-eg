@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import Button from '../components/Button.astro'
+import Card from '../components/Card.astro'
+---
+
+<BaseLayout title="Page Title" class="base--layout">
+  <div class="m-10">
+    <Button>Hi there</Button>
+    <Card>
+      Something here
+    </Card>
+  </div>
+</BaseLayout>
+<style scoped>
+.base--layout {
+  @apply m-20 p-20
+}
+</style>

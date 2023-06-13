@@ -1,0 +1,20 @@
+---
+import Button from './Button.astro'
+---
+
+<div class="card">
+  <div class="card-body">
+    <h2 class="card-title">Egads!</h2>
+    <p class="summary">
+      <slot />
+    </p>
+    <div class="card-actions justify-end">
+      <Button>Geddit</Button>
+    </div>
+  </div>
+</div>
+<style scoped>
+.card {
+  @apply w-96 bg-base-100 shadow-xl
+}
+</style>

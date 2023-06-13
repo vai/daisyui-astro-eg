@@ -1,0 +1,17 @@
+<button class="btn">
+	<slot />
+</button>
+<style scoped>
+.btn {
+	@apply
+		inline-block bg-indigo-600
+		px-4 py-3
+		text-center text-sm font-semibold
+		text-white uppercase cursor-pointer 
+		transition duration-200 ease-in-out
+		rounded-md
+		hover:bg-indigo-700
+		focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-600 focus-visible:ring-offset-2
+		active:scale-95 !important
+}
+</style>
